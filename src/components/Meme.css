@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Karla&display=swap');
+.main{
+    margin-bottom: 300px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    margin: 40px 30px 10px 30px;
+}
+
+.text input {
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    width: 16rem;
+    border: 1px solid #D5D4D8;
+    font-family: "Karla", sans-serif;
+}
+.text input:focus{
+    outline: 1px solid #672280;
+}
+
+.submit{
+    text-align: center;
+}
+.submit button{
+    width: 300px;
+    background: linear-gradient(to right, #672280, #A626D3);
+    border: none;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.submit button:hover{
+    background: linear-gradient(to right, #A626D3, #672280);
+    transition: all .9s ease;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.buttons button {
+    margin: 10px;
+    border-radius: 2px;
+    border: none;
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.buttons button:hover{
+    color: #A626D3;
+    transition: all .5s ease;
+}
+.boxes{
+    display: flex;
+}
+.white-box{
+    margin-top: 20px;
+    width: 10px;
+    height: 10px;
+    color: #fff;
+    border: 1px solid #000;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.black-box{
+    margin-top: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    cursor: pointer;
+}
+.setting{
+    margin-left: 3px;
+    margin-top: 17px; 
+    margin-right: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width: 540px) {
+    .text{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text input{
+        width: 300px;
+    }
+    .white-box, .black-box{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .setting{
+        margin-top: 2px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .text input, .submit button{
+        width: 200px;
+    }
+}
